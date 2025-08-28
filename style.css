@@ -1,0 +1,102 @@
+/* Paleta de Cores */
+:root {
+    --fundo-principal: #1f2937;
+    --card-fundo: #374151;
+    --texto-principal: #f9fafb;
+    --borda-fina: #4b5563;
+    --botao-cor: #537d92;
+    --botao-hover: #6a95a8;
+}
+
+body {
+    background-color: var(--fundo-principal);
+    color: var(--texto-principal);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: var(--card-fundo);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #d1d5db;
+}
+
+textarea {
+    width: 95%;
+    height: 200px;
+    padding: 15px;
+    border: 1px solid var(--borda-fina);
+    border-radius: 8px;
+    background-color: var(--fundo-principal);
+    color: var(--texto-principal);
+    font-size: 1em;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+textarea::placeholder {
+    color: #9ca3af;
+}
+
+button {
+    background-color: var(--botao-cor);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--botao-hover);
+}
+
+.resultado {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.resultado h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid var(--borda-fina);
+    padding-bottom: 5px;
+}
+
+#palavras-chave {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Este estilo é para as tags que serão criadas pelo JavaScript mais tarde */
+.tag {
+    background-color: var(--borda-fina);
+    color: var(--texto-principal);
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
